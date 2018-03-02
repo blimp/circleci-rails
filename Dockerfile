@@ -1,7 +1,7 @@
-FROM circleci/ruby:2.3.1
+FROM circleci/ruby:2.3
 
-RUN apt-get update -yqq \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends \
+RUN sudo apt-get update -yqq \
+    && DEBIAN_FRONTEND=noninteractive sudo apt-get install -yqq --no-install-recommends \
       libqt5webkit5-dev \
       qt5-default \
-    && apt-get -q clean \
+    && sudo apt-get -q clean \
