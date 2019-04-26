@@ -1,4 +1,4 @@
-FROM circleci/ruby:2.3
+FROM circleci/ruby:2.4.4
 
 RUN sudo apt-get update -yqq \
     && DEBIAN_FRONTEND=noninteractive sudo apt-get install -yqq --no-install-recommends \
